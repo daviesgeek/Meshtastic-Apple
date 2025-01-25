@@ -187,6 +187,11 @@ struct NodeListItem: View {
 										.symbolRenderingMode(.hierarchical)
 										.font(.callout)
 								}
+								if node.hasPowerMetrics {
+									Image(systemName: "bolt")
+										.symbolRenderingMode(.hierarchical)
+										.font(.callout)
+								}
 							}
 						}
 						if node.hopsAway > 0 {
